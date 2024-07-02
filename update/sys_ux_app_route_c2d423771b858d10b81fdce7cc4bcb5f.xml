@@ -2,6 +2,7 @@
     <sys_ux_app_route action="INSERT_OR_UPDATE">
         <app_config display_value="CMDB Workspace App Config">6825d0ae8f312010960c53ac37bdee72</app_config>
         <description/>
+        <extension_point/>
         <fields/>
         <icon>configuration-item-outline</icon>
         <name>Record default Infrastructure Relationships</name>

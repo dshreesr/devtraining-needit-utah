@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Record default copy">509d504f47cb02100ab7b4fe316d4374</macroponent>
+        <name>Open CTI</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    let number = "",
+        table = "",
+        sysId = "",
+        source = "";
+    if (event.name == "SN_FORM_DATA_CONNECTED#OPEN_PHONE") {
+        number = event.payload.number;
+        table = event.payload.table;
+        sysId = event.payload.sysid;
+        source = "ribbon" + "~" +new Date().getTime();
+    } else if (event.name == "RECORD#OPEN_CALL") {
+        number = event.payload.params.number;
+        table = event.payload.params.table;
+        sysId = event.payload.params.sysId;
+        source = event.payload.params.source + "~" + new Date().getTime();
+    }
+    api.emit('VIEWPORT_SELECTED', {
+        id: 'cti',
+        group: "bottom",
+        viewportInfo: {
+            route: 'cti',
+            fields: {
+                opened: true
+            },
+            params: {
+                number,
+                table,
+                sysId,
+                source
+            },
+            viewportElementId: 'wsOpenframeCTI'
+        }
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 17:27:02</sys_created_on>
+        <sys_id>389d108f47cb02100ab7b4fe316d43fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Open CTI</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_client_script_389d108f47cb02100ab7b4fe316d43fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 17:27:02</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>41cce4b9dbf23d1005ef172913961993</instance_id>
+        <instance_name>dev228525</instance_name>
+        <name>sys_ux_client_script_389d108f47cb02100ab7b4fe316d43fb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Record default copy"&gt;509d504f47cb02100ab7b4fe316d4374&lt;/macroponent&gt;&lt;name&gt;Open CTI&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    let number = "",
+        table = "",
+        sysId = "",
+        source = "";
+    if (event.name == "SN_FORM_DATA_CONNECTED#OPEN_PHONE") {
+        number = event.payload.number;
+        table = event.payload.table;
+        sysId = event.payload.sysid;
+        source = "ribbon" + "~" +new Date().getTime();
+    } else if (event.name == "RECORD#OPEN_CALL") {
+        number = event.payload.params.number;
+        table = event.payload.params.table;
+        sysId = event.payload.params.sysId;
+        source = event.payload.params.source + "~" + new Date().getTime();
+    }
+    api.emit('VIEWPORT_SELECTED', {
+        id: 'cti',
+        group: "bottom",
+        viewportInfo: {
+            route: 'cti',
+            fields: {
+                opened: true
+            },
+            params: {
+                number,
+                table,
+                sysId,
+                source
+            },
+            viewportElementId: 'wsOpenframeCTI'
+        }
+    });
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-01 17:27:02&lt;/sys_created_on&gt;&lt;sys_id&gt;389d108f47cb02100ab7b4fe316d43fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Open CTI&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_389d108f47cb02100ab7b4fe316d43fb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-01 17:27:02&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1531320814</payload_hash>
+        <record_name>Open CTI</record_name>
+        <reverted_from/>
+        <source>d1cc6f79474382100ab7b4fe316d43e9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 17:27:06</sys_created_on>
+        <sys_id>fd9d508f47cb02100ab7b4fe316d4370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1906f5605970000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 17:27:06</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>b59d508f03cb0210a65160684ea5b070</update_guid>
+        <update_guid_history>b59d508f03cb0210a65160684ea5b070:1531320814,709d108fbccb0210fbb1eb27187607fd:-63818702</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 17:27:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>41db5ce8eaee4a3490164c10a7dc3ec4</sys_id>
+        <sys_metadata>389d108f47cb02100ab7b4fe316d43fb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open CTI</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_389d108f47cb02100ab7b4fe316d43fb</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_389d108f47cb02100ab7b4fe316d43fb">fd9d508f47cb02100ab7b4fe316d4370</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 17:27:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

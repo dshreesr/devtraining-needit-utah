@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Record default copy">509d504f47cb02100ab7b4fe316d4374</macroponent>
+        <name>Update Domain Id</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[function script({api, event}) {  
+    const domainId = event.payload.domainId;
+
+    if (domainId)
+        api.setState('domainId', domainId);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 17:27:02</sys_created_on>
+        <sys_id>f09d508f47cb02100ab7b4fe316d4316</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update Domain Id</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_client_script_f09d508f47cb02100ab7b4fe316d4316</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 17:27:02</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>41cce4b9dbf23d1005ef172913961993</instance_id>
+        <instance_name>dev228525</instance_name>
+        <name>sys_ux_client_script_f09d508f47cb02100ab7b4fe316d4316</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Record default copy"&gt;509d504f47cb02100ab7b4fe316d4374&lt;/macroponent&gt;&lt;name&gt;Update Domain Id&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function script({api, event}) {  
+    const domainId = event.payload.domainId;
+
+    if (domainId)
+        api.setState('domainId', domainId);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-01 17:27:02&lt;/sys_created_on&gt;&lt;sys_id&gt;f09d508f47cb02100ab7b4fe316d4316&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update Domain Id&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_f09d508f47cb02100ab7b4fe316d4316&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-01 17:27:02&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-249238710</payload_hash>
+        <record_name>Update Domain Id</record_name>
+        <reverted_from/>
+        <source>d1cc6f79474382100ab7b4fe316d43e9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 17:27:07</sys_created_on>
+        <sys_id>319d908f47cb02100ab7b4fe316d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1906f5607010000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 17:27:07</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>f59d908f0dcb0210ed63c54694638c0c</update_guid>
+        <update_guid_history>f59d908f0dcb0210ed63c54694638c0c:-249238710,3c9d508f62cb0210914c8405c3d48717:-1560400506</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-01 17:27:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>25fb2620924b4b16b54912352d09b084</sys_id>
+        <sys_metadata>f09d508f47cb02100ab7b4fe316d4316</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Domain Id</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_f09d508f47cb02100ab7b4fe316d4316</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_f09d508f47cb02100ab7b4fe316d4316">319d908f47cb02100ab7b4fe316d430d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-01 17:27:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

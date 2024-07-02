@@ -2,6 +2,7 @@
     <sys_ux_app_route action="INSERT_OR_UPDATE">
         <app_config display_value="Asset Workspace App Config">67137075530130106b86ddeeff7b1213</app_config>
         <description/>
+        <extension_point/>
         <fields/>
         <icon>paperclip-outline</icon>
         <name>Record default Attachment</name>
