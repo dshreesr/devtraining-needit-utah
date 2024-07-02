@@ -2,6 +2,7 @@
     <sys_ux_app_route action="INSERT_OR_UPDATE">
         <app_config display_value="Asset Workspace App Config">67137075530130106b86ddeeff7b1213</app_config>
         <description>Modal to add Catalog item</description>
+        <extension_point/>
         <fields>table,sysId</fields>
         <icon/>
         <name>Record default Publish to Hardware Catalog</name>

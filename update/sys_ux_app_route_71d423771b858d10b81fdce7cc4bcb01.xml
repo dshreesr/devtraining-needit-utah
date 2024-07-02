@@ -2,6 +2,7 @@
     <sys_ux_app_route action="INSERT_OR_UPDATE">
         <app_config display_value="Asset Workspace App Config">67137075530130106b86ddeeff7b1213</app_config>
         <description>Allows the splitting of pre-allocated assets in order to allow a subset of them to be transferred</description>
+        <extension_point/>
         <fields>table,sysId</fields>
         <icon/>
         <name>Record default Split</name>
